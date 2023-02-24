@@ -23,33 +23,8 @@ function solution(maps) {
                 queue.push([i,j]);
             }
         }
-        /*
-        if (i-1 > 0 && maps[i-1][j] && dist[i-1][j] > dist[i][j] + 1) {
-            dist[i-1][j] = dist[i][j] + 1;
-            queue.push([i-1, j]);
-        }
-        if (i+1 <= size && maps[i+1][j] && dist[i+1][j] > dist[i][j] + 1) {
-            dist[i+1][j] = dist[i][j] + 1;
-            queue.push([i+1, j]);
-        }
-        if (j-1 > 0 && maps[i][j-1] && dist[i][j-1] > dist[i][j] + 1) {
-            dist[i][j-1] = dist[i][j] + 1;
-            queue.push([i, j-1]);
-        };
-        if (j+1 <= size && maps[i][j+1] && dist[i][j+1] > dist[i][j] + 1) {
-            dist[i][j+1] = dist[i][j] + 1;
-            queue.push([i, j+1]);
-        }
-        */
     }
-    //console.log(dist);
-    if (dist[N][M] === Number.MAX_SAFE_INTEGER) dist[N][M] = -1;
     
+    if (dist[N][M] === Number.MAX_SAFE_INTEGER) dist[N][M] = -1;
     return dist[N][M];
 }
-
-function getMin(a, b) {
-    if (a < b) return a;
-    else return b;
-}
-    
