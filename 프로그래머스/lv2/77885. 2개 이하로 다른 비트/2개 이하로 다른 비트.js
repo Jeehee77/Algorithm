@@ -5,7 +5,7 @@ function solution(numbers) {
         
         /* 홀수인 경우 
          - 1의 자리수부터 검사하여 처음으로 0이 등장한 자리를 구한다.
-         - 그 자리를 1로 바꾸고 해당 자리수 직전의 수를 1로 바꾼다.
+         - 그 자리를 1로 바꾸고 해당 자리수 직전의 수를 0으로 바꾼다.
         */
         let number_bit = '0' + number.toString(2);
         let index = 0;
